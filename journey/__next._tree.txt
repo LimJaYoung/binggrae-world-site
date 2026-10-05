@@ -1,3 +1,3 @@
 :HL["/binggrae-world-site/_next/static/css/c97f0abffdae2f54.css","style"]
-:HL["/binggrae-world-site/_next/static/css/809f625e956acd68.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"journey","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"PBANr1z-XbFpOuuihL6Cr"}
+:HL["/binggrae-world-site/_next/static/css/3924bd93b8438a63.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"journey","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"Pbd6hYnGZmZoKMW_q2BfY"}
