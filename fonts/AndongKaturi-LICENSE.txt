@@ -1,0 +1,5 @@
+AndongKaturi / 안동엄마까투리체
+Copyright: 안동시
+Official source and usage terms: https://www.andong.go.kr/portal/contents.do?mId=0301030500
+Webfont source: https://cdn.jsdelivr.net/gh/webdesignfarm/font/AndongKaturi.woff
+Official page permits free use in video, print, internet and mobile without a separate permission procedure.
