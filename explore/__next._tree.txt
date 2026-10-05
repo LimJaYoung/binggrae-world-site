@@ -1,3 +1,3 @@
 :HL["/binggrae-world-site/_next/static/css/c97f0abffdae2f54.css","style"]
 :HL["/binggrae-world-site/_next/static/css/3daa0977188bcb39.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"explore","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"uGJmvh2z9cQ_0hsGkZ_1p"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"explore","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"drsC5gZahrzKvKwGvWhlL"}
