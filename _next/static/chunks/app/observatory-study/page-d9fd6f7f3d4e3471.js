@@ -98,4 +98,4 @@ float PCSS (sampler2D shadowMap, vec4 coords) {
   }
   float penumbraRatio = penumbraSize(zReceiver, avgBlockerDepth);
   return vogelFilter(shadowMap, uv, zReceiver, 1.25 * penumbraRatio, angle);
-}`})({size:a,samples:t,focus:e},n));return s.ShaderChunk.shadowmap_pars_fragment=m,i(p,d,c),()=>{s.ShaderChunk.shadowmap_pars_fragment=o,p.shadowMap.type=f,i(p,d,c)}},[e,a,t]),null}}},e=>{e.O(0,[8975,5816,80,7667,7474,856,3374,5004,9710,7358],()=>e(e.s=217)),_N_E=e.O()}]);
+}`})({size:a,samples:t,focus:e},n));return s.ShaderChunk.shadowmap_pars_fragment=m,i(p,d,c),()=>{s.ShaderChunk.shadowmap_pars_fragment=o,p.shadowMap.type=f,i(p,d,c)}},[e,a,t]),null}}},e=>{e.O(0,[8975,5816,80,7667,7474,856,4103,3374,5004,9710,7358],()=>e(e.s=217)),_N_E=e.O()}]);
