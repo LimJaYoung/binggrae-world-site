@@ -1,0 +1,101 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2085],{1722:(e,t,r)=>{r.d(t,{default:()=>H});var n=r(4553),a=r(8421),s=r(4531),i=r(5805),o=r(1795),l=r(509),c=r(636),u=r(8767),d=r(8860),h=r(4930),f=r(2953),m=r(3374),p=r(7748),x=r(3712),g=r(856),v=r(3487),b=r(4639),w=r(7699);function z({id:e,open:t}){let r=(0,i.useRef)(null),a="together"===e,s="melona"===e,o=a?.55:.72,l=a?1.08:1.44;return(0,d.F)((e,n)=>{r.current&&(r.current.rotation.y+=((t?-1.65:0)-r.current.rotation.y)*(1-Math.exp(-(t?14:7)*Math.min(n,.04))))}),(0,n.jsxs)("group",{position:[0,a?.5:.4,a?-.78:.96],children:[(0,n.jsxs)("mesh",{position:[0,l/2,-.025],children:[(0,n.jsx)("planeGeometry",{args:[o,l]}),(0,n.jsx)("meshBasicMaterial",{color:t?"#fff0c4":"#453a40"})]}),(0,n.jsxs)("group",{ref:r,position:[-o/2,0,.035],children:[(0,n.jsx)(w.b,{args:[o,l,.09],radius:.035,position:[o/2,l/2,0],castShadow:!0,children:(0,n.jsx)("meshStandardMaterial",{color:s?"#80a994":"bravo"===e?"#657b9e":"#b68458"})}),(0,n.jsx)(w.b,{args:[o-.16,.48*l,.025],radius:.025,position:[o/2,.66*l,.06],children:(0,n.jsx)("meshStandardMaterial",{color:s?"#c5e9d9":"#e0b980",roughness:.45})}),(0,n.jsxs)("mesh",{position:[o-.12,.42*l,.1],children:[(0,n.jsx)("sphereGeometry",{args:[.04,12,8]}),(0,n.jsx)("meshStandardMaterial",{color:"#f8d691",metalness:.35,roughness:.4})]})]}),t&&(0,n.jsx)("pointLight",{position:[0,.9,.4],intensity:3,distance:3,color:"#ffe6b2"})]})}var j=r(1569),M=r(3688),y=r(5725),S=r(629),k=r(6537),N=r(6642);let R={x:0,z:1.15,radius:1.7},E={x:.1,z:6.15};function _(e){return{x:0,z:"together"===e?-.58:1.5}}function I(e,t){return .43>Math.abs(t.x)&&("together"===e?t.z>=-.72&&t.z<=-.55:t.z>=1.1&&t.z<=1.67)}function C(e,t){return!!(.52>Math.abs(t.x-.1)&&t.z>=3.3&&t.z<5.95||1.4>Math.abs(t.x-.1)&&t.z>=5.85&&t.z<6.9)||!(Math.hypot(t.x,t.z)>=3.65)&&("together"!==e?!(1.85>Math.abs(t.x)&&t.z<1.15):!(Math.hypot(t.x-R.x,t.z-R.z)<R.radius||.92>Math.abs(t.x)&&t.z<-.72||Math.abs(t.x)>1.21&&3.03>Math.abs(t.x)&&t.z<-.14&&t.z>-1.62))}function A(e,t,r){let n=t=>C(e,t),a=(0,N.PM)(t,r,!1,n);if("together"!==e||Math.hypot(a.x-t.x,a.z-t.z)>1e-4)return a;let{x:s,z:i,radius:o}=R,l=t.x-s,c=t.z-i,u=Math.hypot(l,c);if(u<o||u>o+.2||Math.hypot(r.x-s,r.z-i)>=o)return a;let d=r.x-t.x,h=r.z-t.z,f=Math.hypot(d,h);if(!f)return a;let m=-c*d+l*h,p=Math.abs(m)>.08*f?Math.sign(m):l>=0?-1:1,x=Math.atan2(c,l)+p*f/u,g={x:s+Math.cos(x)*(u+1e-5),z:i+Math.sin(x)*(u+1e-5)};return n(g)?g:a}function D({id:e,phase:t,spawn:r,input:a,target:s,onNear:o,onReady:l,onDone:c}){let u=(0,i.useRef)(null),w=(0,i.useRef)(null),R=(0,i.useRef)(0),P=(0,i.useRef)(!1),B=(0,i.useRef)(r??{x:.1,z:5.65}),O=(0,i.useRef)(B.current),G=(0,i.useRef)(.25),F=(0,i.useRef)(0),$=(0,i.useRef)([]),T=(0,i.useRef)(null),L=(0,i.useRef)(null),U=(0,i.useRef)(!r),X=(0,y.A)(a);return(0,i.useEffect)(l,[l]),(0,i.useEffect)(()=>{R.current=0,P.current=!1,$.current=[],T.current=null,L.current=null,O.current={...B.current},X.current.clear(),"garden"===t&&u.current&&(u.current.rotation.y=0)},[t,X]),(0,d.F)(({camera:r,size:n},i)=>{let l=Math.min(i,k.Xr.maxDelta),d=Math.min(i,.25);R.current+=l;let f=!1,m=()=>{P.current||(P.current=!0,c([r.position.x,r.position.y,r.position.z]))};if("garden"===t){let t=X.current,r=a.current.x+Number(t.has("d")||t.has("ArrowRight"))-Number(t.has("a")||t.has("ArrowLeft")),n=a.current.z+Number(t.has("s")||t.has("ArrowDown"))-Number(t.has("w")||t.has("ArrowUp")),i=B.current;r||n?(s.current=null,$.current=[],i=function(e,t,r,n){let a=Math.hypot(r.x,r.z);if(!a)return t;let s=t,i=2*Math.min(.25,Math.max(0,n))*Math.min(1,a);for(;i>1e-5;){let t=Math.min(.04,i),n=A(e,s,{x:s.x+r.x/a*t,z:s.z+r.z/a*t});if(1e-5>Math.hypot(n.x-s.x,n.z-s.z))break;s=n,i-=t}return s}(e,B.current,{x:r,z:n},d)):s.current&&(T.current!==s.current&&($.current=(0,N.wE)(B.current,s.current,!1,t=>C(e,t),.1),T.current=s.current),i=function(e,t,r,n){let a=t,s=2*Math.min(.25,Math.max(0,n));for(;s>1e-5&&r.length;){let t=r[0],n=t.x-a.x,i=t.z-a.z,o=Math.hypot(n,i);if(o<.001){r.shift();continue}let l=Math.min(.04,o,s),c=A(e,a,{x:a.x+n/o*l,z:a.z+i/o*l});if(1e-5>Math.hypot(c.x-a.x,c.z-a.z))break;a=c,s-=l}return a}(e,B.current,$.current,d),$.current.length||(s.current=null)),f=Math.hypot(i.x-B.current.x,i.z-B.current.z)>.001,u.current&&f&&(u.current.rotation.y=Math.atan2(i.x-B.current.x,i.z-B.current.z)),B.current=i;let l=(0,N.cc)(B.current,_(e))?"door":(0,N.cc)(B.current,E)?"dock":null;l!==L.current&&(L.current=l,o(l)),I(e,B.current)||(U.current=!0),U.current&&I(e,B.current)&&(a.current={x:0,z:0},s.current=null,X.current.clear(),m())}if("disembarking"===t){let e=Math.min(1,R.current/k.Xr.disembark);B.current={x:.1,z:6.15-.5*e},f=!0,u.current&&(u.current.rotation.y=Math.PI),1===e&&m()}if("entering"===t){let t=R.current*k.Xr.entrySpeed,r=Math.min(1,Math.max(0,(t-.3)/1.1));B.current={x:O.current.x*(1-r),z:O.current.z*(1-r)+("together"===e?-1.1:.72)*r},f=r>0&&r<1,u.current&&(u.current.rotation.y=Math.PI),t>=1.5&&m()}let p="entering"===t?.25+.22*Math.min(1,R.current*k.Xr.entrySpeed/1.4):(0,N.Jk)(B.current);G.current+=(p-G.current)*(1-Math.exp(-18*("garden"===t?d:l))),u.current&&(u.current.scale.setScalar("disembarking"===t?Math.min(1,R.current/k.Xr.disembark*5):1),F.current+=f?("garden"===t?d:l)*11:0,u.current.position.set(B.current.x,G.current+(f?.045*Math.abs(Math.sin(F.current)):0),B.current.z),u.current.traverse(e=>{if("left-leg"===e.name||"right-leg"===e.name){let t=f?Math.sin(F.current)*("left-leg"===e.name?1:-1)*.32:0;e.rotation.x=t,e.position.set(0,.65*(1-Math.cos(t)),-.65*Math.sin(t))}if("left-arm"===e.name||"right-arm"===e.name){let t=f?Math.sin(F.current)*("left-arm"===e.name?1:-1)*.25:0;e.rotation.x=t,e.position.set(0,1.18*(1-Math.cos(t)),-1.18*Math.sin(t))}}));let x="flying"===t||"departing"===t;if(w.current)if(x){let e=Math.min(1,R.current/("flying"===t?k.Xr.arrival:k.Xr.departure)),r=(0,S.z)(t,e);w.current.position.set(r.x,r.y,r.z),1===e&&m()}else w.current.position.set(.1,-1.1,6.45);if("departing"!==t){let e=(0,k.gY)(n.width,n.height,B.current,x&&w.current?w.current.position:null);r.position.lerp(new h.Pq0(e.camera.x,e.camera.y,e.camera.z),1-Math.exp(-e.damping*l)),r.lookAt(e.focus.x,e.focus.y,e.focus.z)}}),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(M.A,{}),(0,n.jsx)("ambientLight",{intensity:.8}),(0,n.jsx)("hemisphereLight",{args:["#fff5e7","#7e8277",1.4]}),(0,n.jsx)("directionalLight",{position:[-5,10,8],intensity:2.5,castShadow:!0,"shadow-mapSize":[1024,1024]}),"banana"===e?(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(f.$,{interactiveDoor:!0}),(0,n.jsx)(f.x,{running:!0})]}):"melona"===e?(0,n.jsx)(p.E,{interactiveDoor:!0}):(0,n.jsx)(m.f,{kind:"bravo"===e?"observatory":"village",interactiveDoor:!0}),(0,n.jsx)(j.A,{id:e}),(0,n.jsx)(x.A,{}),(0,n.jsx)(z,{id:e,open:"entering"===t}),(0,n.jsx)(b.A,{spread:1}),(0,n.jsxs)("mesh",{rotation:[-Math.PI/2,0,0],position:[0,.27,3.1],children:[(0,n.jsx)("ringGeometry",{args:[.48,.57,48]}),(0,n.jsx)("meshStandardMaterial",{color:"#b4e8e1",emissive:"#77cabe",emissiveIntensity:.4})]}),(0,n.jsxs)("mesh",{rotation:[-Math.PI/2,0,0],position:[0,.29,0],onPointerDown:e=>{"garden"===t&&(e.stopPropagation(),s.current={x:e.point.x,z:e.point.z})},children:[(0,n.jsx)("planeGeometry",{args:[12,14]}),(0,n.jsx)("meshBasicMaterial",{transparent:!0,opacity:0,depthWrite:!1})]}),(0,n.jsx)("group",{ref:w,scale:.78,rotation:[0,-Math.PI/2,0],children:(0,n.jsx)(v.A,{flying:"flying"===t||"departing"===t})}),["disembarking","garden","entering"].includes(t)&&(0,n.jsxs)("group",{ref:u,children:[(0,n.jsx)(g.A,{kind:"adventurer",scale:.45}),(0,n.jsxs)("mesh",{rotation:[-Math.PI/2,0,0],position:[0,.04,0],children:[(0,n.jsx)("ringGeometry",{args:[.22,.27,24]}),(0,n.jsx)("meshBasicMaterial",{color:"#e7faff"})]})]})]})}var P=r(6004),B=r(3082),O=r(4977),G=r.n(O);let F=(0,i.lazy)(()=>Promise.all([r.e(9300),r.e(880)]).then(r.bind(r,880))),$=(0,i.lazy)(()=>Promise.all([r.e(9300),r.e(9793),r.e(146)]).then(r.bind(r,146))),T=(0,i.lazy)(()=>Promise.all([r.e(9300),r.e(9793),r.e(3443),r.e(6635)]).then(r.bind(r,6635))),L=(0,i.lazy)(()=>Promise.all([r.e(9300),r.e(3443),r.e(2487)]).then(r.bind(r,2487))),U={banana:"햇살언덕으로",bravo:"별빛섬으로",together:"친구마을로",melona:"정원섬으로"},X={banana:()=>Promise.all([r.e(9300),r.e(880)]).then(r.bind(r,880)),bravo:()=>Promise.all([r.e(9300),r.e(9793),r.e(146)]).then(r.bind(r,146)),together:()=>Promise.all([r.e(9300),r.e(9793),r.e(3443),r.e(6635)]).then(r.bind(r,6635)),melona:()=>Promise.all([r.e(9300),r.e(3443),r.e(2487)]).then(r.bind(r,2487))};class q extends i.Component{static getDerivedStateFromError(){return{failed:!0}}render(){return this.state.failed?(0,n.jsx)("div",{className:G().overlay,children:(0,n.jsxs)("section",{className:G().cardContent,children:[(0,n.jsx)("p",{children:"3D 장면을 불러오지 못했어요."}),(0,n.jsx)("button",{onClick:()=>window.location.reload(),children:"다시 불러오기"})]})}):this.props.children}constructor(...e){super(...e),this.state={failed:!1}}}function H({id:e,initialInside:t=!1}){let[r,d]=(0,i.useState)(t?"inside":"briefing"),[h,f]=(0,i.useState)(!1),[m,p]=(0,i.useState)(null),[x,g]=(0,i.useState)(t),[v,b]=(0,i.useState)(!1),w=(0,i.useRef)({x:0,z:0}),z=(0,i.useRef)(null),j=B.l[e],M=(0,i.useRef)(k.SG.position),y=(0,i.useCallback)(e=>{w.current={x:0,z:0},z.current=null,p(null),d(e)},[]);(0,i.useEffect)(()=>{let e=document.body.style.overflow;return document.body.style.overflow="hidden",()=>{document.body.style.overflow=e}},[]),(0,i.useEffect)(()=>{"flying"===r&&X[e]().catch(()=>void 0)},[e,r]);let S=(0,i.useCallback)(()=>f(!0),[]),N=(0,i.useCallback)(e=>{(M.current=e,"departing"===r)?window.location.assign((0,l.l)(v&&j.next?`/island.html?place=${j.next}`:"/")):"flying"===r?y("disembarking"):"disembarking"===r?y("garden"):"garden"===r?y("entering"):"entering"===r&&y("inside")},[r,v,j.next,y]),R=(0,i.useCallback)(()=>{"garden"===r&&("dock"===m&&y("departing"),"door"===m&&(z.current=_(e)))},[r,m,e,y]);(0,i.useEffect)(()=>{let e=e=>{"e"!==e.key.toLowerCase()||e.repeat||/INPUT|TEXTAREA|SELECT/.test(e.target?.tagName)||(e.preventDefault(),R())};return window.addEventListener("keydown",e),()=>window.removeEventListener("keydown",e)},[R]);let E=e=>{let t=(0,k.gY)(window.innerWidth,Math.max(540,window.innerHeight),{x:0,z:2.3},null,!0);M.current=[t.camera.x,t.camera.y,t.camera.z],g(!0),b(e),y("garden")},I={initialCamera:M.current,onExit:()=>E(!1),onDepart:()=>E(!0)};if("inside"===r)return(0,n.jsx)("div",{"data-journey":e,"data-phase":"inside","aria-label":`${j.room} 정면 미션 화면`,children:(0,n.jsx)(i.Suspense,{fallback:(0,n.jsx)("main",{className:G().page,children:(0,n.jsxs)("div",{className:G().flight,role:"status",children:[j.room,"의 문을 열고 있어요…"]})}),children:"banana"===e?(0,n.jsx)(F,{...I}):"bravo"===e?(0,n.jsx)($,{...I}):"together"===e?(0,n.jsx)(T,{...I}):(0,n.jsx)(L,{...I})})});let C="door"===m?"현관문으로 걸어가기":"dock"===m?v?`우주선 타고 ${j.nextName}${"together"===j.next||!j.next?"로":"으로"} →`:"우주선 타고 귀환하기":null;return(0,n.jsxs)("main",{className:G().page,"data-journey":e,"data-phase":r,children:[(0,n.jsx)(c.A,{hideRocket:!0}),(0,n.jsx)("div",{className:G().scene,"aria-label":`${j.name} 입체 장면`,children:(0,n.jsx)(q,{children:(0,n.jsx)(o.Hl,{shadows:!0,dpr:[1,1.5],camera:{...k.SG,position:M.current},fallback:(0,n.jsx)("p",{children:"3D를 지원하는 브라우저에서 열어 주세요."}),children:(0,n.jsx)(i.Suspense,{fallback:null,children:(0,n.jsx)(D,{id:e,phase:r,spawn:x?"together"===e?{x:.6,z:-.6}:{x:0,z:2.35}:void 0,input:w,target:z,onNear:p,onReady:S,onDone:N})})})})}),(0,n.jsxs)("header",{className:G().header,children:[(0,n.jsx)("a",{className:G().mapLink,href:(0,l.l)("/"),children:"← 맵으로 가기"}),(0,n.jsx)("div",{className:G().title,children:(0,n.jsxs)("b",{children:[j.name," 탐험"]})}),(0,n.jsxs)("span",{children:["탐험 ",j.number,"/05"]})]}),(0,n.jsx)(a.A,{island:e}),"briefing"===r&&(0,n.jsx)(P.A,{label:`DESTINATION ${j.number} \xb7 ${j.name}`,title:`우주선을 타고 ${U[e]}!`,description:j.description,hint:"우주선에서 내린 뒤 왼쪽 원형 휠을 드래그해 걸어 다녀요.",disabled:!h,onContinue:()=>y("flying")}),"garden"===r&&(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)("section",{className:G().quest,"aria-live":"polite",children:[(0,n.jsxs)("small",{children:["오늘의 부탁 \xb7 ",j.mission]}),(0,n.jsx)("h1",{children:v?"우주선으로 돌아가세요":`${j.room} 문 앞으로 가세요`}),(0,n.jsx)("p",{children:v?"계단 앞 우주선까지 걸어가 탑승하세요.":"together"===e?"↑로 계단을 올라 분수 옆길을 따라가세요. 가운데 높은 집의 ‘마을 우체국’ 간판과 문 옆 우편함을 찾아요.":"왼쪽 원형 휠로 계단을 올라 가운데 현관문으로 걸어가세요. 문이 자동으로 열리고 실내로 들어가요."}),"together"===e&&!v&&(0,n.jsx)("button",{className:`${G().action} ${G().questAction}`,onClick:()=>{w.current={x:0,z:0},z.current=_(e)},children:"✉ 우체국까지 걸어가기 →"}),(0,n.jsx)(s.A,{message:C?"도착했어요! 아래 버튼을 눌러 시작하세요.":"빛나는 물건 가까이로 이동하세요.",action:C?{label:C+" →",onClick:R}:void 0})]}),(0,n.jsxs)("div",{className:G().controls,children:[(0,n.jsx)("p",{children:"원형 휠 드래그로 이동 \xb7 가까이서 버튼 / E"}),(0,n.jsx)(u.A,{input:w,className:G().movementControl})]})]}),["flying","disembarking","entering","departing"].includes(r)&&(0,n.jsx)("div",{className:G().flight,role:"status",children:"entering"===r?`문이 열렸어요. ${j.room} 안으로 들어가요…`:"flying"===r?"구름 착륙장으로 비행 중…":"disembarking"===r?"우주선에서 내리고 있어요…":"우주선을 타고 다음 여행으로 출발합니다…"})]})}},3082:(e,t,r)=>{r.d(t,{l:()=>n});let n={banana:{number:"02",name:"햇살 언덕",room:"풍차 빵집",title:"바람이 만든\n따뜻한 한 조각",description:"풍차가 밀을 빻고, 창가에는 햇살이 내려앉아요. 작은 제빵사가 되어 이웃에게 나눌 빵을 구워 볼까요?",color:"#f7d18d",next:"bravo",nextName:"별빛 관측탑",icon:"☀",mission:"밀 갈기 \xb7 반죽하기 \xb7 빵 굽기 \xb7 나누기"},bravo:{number:"03",name:"별빛 관측탑",room:"별빛 관측실",title:"오늘 밤,\n별에게 가는 길",description:"푸른 지붕 위로 별빛이 모여들어요. 망원경으로 별을 찾고 나만의 관측 일지를 완성해요.",color:"#b5cfff",next:"together",nextName:"친구 마을",icon:"✦",mission:"망원경 맞추기 \xb7 별 잇기 \xb7 관측 기록"},together:{number:"04",name:"친구 마을",room:"마을 우체국",title:"작은 편지에\n마음을 담아서",description:"분수 너머 작은 우체국에 편지가 도착했어요. 봉투에 풀을 바르고 우표를 붙여 우체통에 편지를 넣어 봐요.",color:"#f3b6c1",next:"melona",nextName:"초록 정원",icon:"✉",mission:"봉투에 풀 바르기 \xb7 우표 붙이기 \xb7 우체통에 넣기"},melona:{number:"05",name:"초록 정원",room:"빛나는 온실",title:"씨앗 하나가\n정원이 되는 순간",description:"유리 온실에 작은 씨앗을 심어요. 물과 햇빛으로 꽃을 피우고, 나비들이 쉬어 갈 정원을 함께 만들어요.",color:"#c5dfad",next:null,nextName:"전체 지도",icon:"✿",mission:"씨앗 심기 \xb7 물 주기 \xb7 햇빛 모으기 \xb7 꽃 피우기"}}},3632:(e,t,r)=>{r.d(t,{w:()=>l});var n=r(5805),a=r(425),s=r(4930),i=r(8860);function o(e,t,r){t.traverse(t=>{t.material&&(Array.isArray(t.material)?t.material:[t.material]).forEach(t=>{e.properties.remove(t),null==t.dispose||t.dispose(),t.needsUpdate=!0})}),e.info.programs.length=0,e.compile(t,r)}function l({focus:e=0,samples:t=10,size:r=25}){let c=(0,i.D)(e=>e.gl),u=(0,i.D)(e=>e.scene),d=(0,i.D)(e=>e.camera);return n.useEffect(()=>{let n=a.ShaderChunk.shadowmap_pars_fragment,i=!n.includes("sampler2DShadow"),l=n.lastIndexOf("float getShadow( sampler2D shadowMap"),h=n.indexOf("if ( frustumTest ) {",l)+20;if(l<0||h<20)return void console.warn("[SoftShadows] Could not find injection point in shadow shader");let f=c.shadowMap.type;i||(c.shadowMap.type=s.bTm);let m=n.slice(l,h).includes("shadowIntensity"),p=(n.slice(0,h)+"\n"+(m?"return mix( 1.0, PCSS( shadowMap, shadowCoord ), shadowIntensity );":"return PCSS( shadowMap, shadowCoord );")+n.slice(h)).replace("#ifdef USE_SHADOWMAP","#ifdef USE_SHADOWMAP\n"+(({focus:e=0,size:t=25,samples:r=10},n)=>{let a=n?"unpackRGBAToDepth( texture2D( shadowMap, uv + offset ) )":"texture2D( shadowMap, uv + offset ).r";return`
+#define PENUMBRA_FILTER_SIZE float(${t})
+#define RGB_NOISE_FUNCTION(uv) (randRGB(uv))
+vec3 randRGB(vec2 uv) {
+  return vec3(
+    fract(sin(dot(uv, vec2(12.75613, 38.12123))) * 13234.76575),
+    fract(sin(dot(uv, vec2(19.45531, 58.46547))) * 43678.23431),
+    fract(sin(dot(uv, vec2(23.67817, 78.23121))) * 93567.23423)
+  );
+}
+
+vec3 lowPassRandRGB(vec2 uv) {
+  // 3x3 convolution (average)
+  // can be implemented as separable with an extra buffer for a total of 6 samples instead of 9
+  vec3 result = vec3(0);
+  result += RGB_NOISE_FUNCTION(uv + vec2(-1.0, -1.0));
+  result += RGB_NOISE_FUNCTION(uv + vec2(-1.0,  0.0));
+  result += RGB_NOISE_FUNCTION(uv + vec2(-1.0, +1.0));
+  result += RGB_NOISE_FUNCTION(uv + vec2( 0.0, -1.0));
+  result += RGB_NOISE_FUNCTION(uv + vec2( 0.0,  0.0));
+  result += RGB_NOISE_FUNCTION(uv + vec2( 0.0, +1.0));
+  result += RGB_NOISE_FUNCTION(uv + vec2(+1.0, -1.0));
+  result += RGB_NOISE_FUNCTION(uv + vec2(+1.0,  0.0));
+  result += RGB_NOISE_FUNCTION(uv + vec2(+1.0, +1.0));
+  result *= 0.111111111; // 1.0 / 9.0
+  return result;
+}
+vec3 highPassRandRGB(vec2 uv) {
+  // by subtracting the low-pass signal from the original signal, we're being left with the high-pass signal
+  // hp(x) = x - lp(x)
+  return RGB_NOISE_FUNCTION(uv) - lowPassRandRGB(uv) + 0.5;
+}
+
+
+vec2 pcssVogelDiskSample(int sampleIndex, int sampleCount, float angle) {
+  const float goldenAngle = 2.399963f; // radians
+  float r = sqrt(float(sampleIndex) + 0.5f) / sqrt(float(sampleCount));
+  float theta = float(sampleIndex) * goldenAngle + angle;
+  float sine = sin(theta);
+  float cosine = cos(theta);
+  return vec2(cosine, sine) * r;
+}
+float penumbraSize( const in float zReceiver, const in float zBlocker ) { // Parallel plane estimation
+  return (zReceiver - zBlocker) / zBlocker;
+}
+float findBlocker(sampler2D shadowMap, vec2 uv, float compare, float angle) {
+  float texelSize = 1.0 / float(textureSize(shadowMap, 0).x);
+  float blockerDepthSum = float(${e});
+  float blockers = 0.0;
+
+  int j = 0;
+  vec2 offset = vec2(0.);
+  float depth = 0.;
+
+  #pragma unroll_loop_start
+  for(int i = 0; i < ${r}; i ++) {
+    offset = (pcssVogelDiskSample(j, ${r}, angle) * texelSize) * 2.0 * PENUMBRA_FILTER_SIZE;
+    depth = ${a};
+    if (depth < compare) {
+      blockerDepthSum += depth;
+      blockers++;
+    }
+    j++;
+  }
+  #pragma unroll_loop_end
+
+  if (blockers > 0.0) {
+    return blockerDepthSum / blockers;
+  }
+  return -1.0;
+}
+
+        
+float vogelFilter(sampler2D shadowMap, vec2 uv, float zReceiver, float filterRadius, float angle) {
+  float texelSize = 1.0 / float(textureSize(shadowMap, 0).x);
+  float shadow = 0.0f;
+  int j = 0;
+  vec2 vogelSample = vec2(0.0);
+  vec2 offset = vec2(0.0);
+  #pragma unroll_loop_start
+  for (int i = 0; i < ${r}; i++) {
+    vogelSample = pcssVogelDiskSample(j, ${r}, angle) * texelSize;
+    offset = vogelSample * (1.0 + filterRadius * float(${t}));
+    shadow += step( zReceiver, ${a} );
+    j++;
+  }
+  #pragma unroll_loop_end
+  return shadow * 1.0 / ${r}.0;
+}
+
+float PCSS (sampler2D shadowMap, vec4 coords) {
+  vec2 uv = coords.xy;
+  float zReceiver = coords.z; // Assumed to be eye-space z in this code
+  float angle = highPassRandRGB(gl_FragCoord.xy).r * PI2;
+  float avgBlockerDepth = findBlocker(shadowMap, uv, zReceiver, angle);
+  if (avgBlockerDepth == -1.0) {
+    return 1.0;
+  }
+  float penumbraRatio = penumbraSize(zReceiver, avgBlockerDepth);
+  return vogelFilter(shadowMap, uv, zReceiver, 1.25 * penumbraRatio, angle);
+}`})({size:r,samples:t,focus:e},i));return a.ShaderChunk.shadowmap_pars_fragment=p,o(c,u,d),()=>{a.ShaderChunk.shadowmap_pars_fragment=n,c.shadowMap.type=f,o(c,u,d)}},[e,r,t]),null}},3688:(e,t,r)=>{r.d(t,{A:()=>s});var n=r(5805),a=r(8860);function s(){let e=(0,n.useRef)({frames:0,seconds:0});return(0,a.F)(({gl:t},r)=>{if(document.hidden||r>1)return;let n=e.current;n.frames++,n.seconds+=r,n.seconds>=2&&(t.domElement.dataset.frameRate=(n.frames/n.seconds).toFixed(1),t.domElement.dataset.triangles=String(t.info.render.triangles),t.domElement.dataset.drawCalls=String(t.info.render.calls),n.frames=0,n.seconds=0)}),null}},5725:(e,t,r)=>{r.d(t,{A:()=>a});var n=r(5805);function a(e){let t=(0,n.useRef)(new Set);return(0,n.useEffect)(()=>{let r=e=>{let r=e.target;!r?.closest('input, textarea, select, [contenteditable="true"], [role="slider"]')&&["ArrowUp","ArrowDown","ArrowLeft","ArrowRight","w","a","s","d"].includes(e.key)&&(e.preventDefault(),t.current.add(e.key))},n=e=>t.current.delete(e.key),a=()=>{t.current.clear(),e.current={x:0,z:0}};return window.addEventListener("keydown",r),window.addEventListener("keyup",n,!0),window.addEventListener("blur",a),document.addEventListener("visibilitychange",a),()=>{a(),window.removeEventListener("keydown",r),window.removeEventListener("keyup",n,!0),window.removeEventListener("blur",a),document.removeEventListener("visibilitychange",a)}},[e]),t}}}]);
